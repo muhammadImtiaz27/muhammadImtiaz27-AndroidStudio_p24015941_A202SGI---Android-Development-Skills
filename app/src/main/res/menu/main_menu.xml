@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/menu_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/menu_currency"
+            android:icon="@drawable/baseline_attach_money_24"
+            android:title="Currency Converter" />
+
+        <item
+            android:id="@+id/menu_image_recognition"
+            android:icon="@drawable/icon_image_recognition"
+            android:title="Image Recognition" />
+
+        <item
+            android:id="@+id/menu_random_photos"
+            android:icon="@drawable/icon_multiple_photos"
+            android:title="Photos" />
+
+        <item
+            android:id="@+id/menu_todo"
+            android:icon="@drawable/baseline_task_24"
+            android:title="To-Do List" />
+
+        <item
+            android:id="@+id/menu_translate"
+            android:icon="@drawable/baseline_g_translate_24"
+            android:title="Translate" />
+
+        <item
+            android:id="@+id/menu_view_tourist_spot_on_map"
+            android:icon="@drawable/icon_locate_on_map"
+            android:title="View Tourist Map" />
+
+        <item
+            android:id="@+id/menu_weather"
+            android:icon="@drawable/baseline_sunny_24"
+            android:title="Weather" />
+
+        <item
+            android:id="@+id/menu_settings"
+            android:icon="@drawable/baseline_settings_24"
+            android:title="Settings" />
+
+        <item
+            android:id="@+id/menu_logout"
+            android:icon="@drawable/baseline_logout_24"
+            android:title="Logout" />
+    </group>
+
+</menu>

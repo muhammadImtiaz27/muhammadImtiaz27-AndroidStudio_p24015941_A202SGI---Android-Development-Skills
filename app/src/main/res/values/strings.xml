@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Discover Malaysia</string>
+    <string name="client_id">367718152198-1lni83ut8408cp5sqt75benb7t14ckfp.apps.googleusercontent.com</string>
+    <string name="navigation_drawer_open">Open Navigation Drawer</string>
+    <string name="navigation_drawer_close">Close Navigation Drawer</string>
+
+    <string name="Johor">Johor</string>
+    <string name="Kedah">Kedah</string>
+    <string name="Kelantan">Kelantan</string>
+    <string name="Melaka">Melaka</string>
+    <string name="Negeri_Sembilan">Negeri Sembilan</string>
+    <string name="Pahang">Pahang</string>
+    <string name="Perak">Perak</string>
+    <string name="Perlis">Perlis</string>
+    <string name="Pulau_Pinang">Pulau Pinang</string>
+    <string name="Sabah">Sabah</string>
+    <string name="Sarawak">Sarawak</string>
+    <string name="Selangor">Selangor</string>
+    <string name="Terengganu">Terengganu</string>
+
+    <string name="Historical">Historical</string>
+    <string name="Hotel">Hotel</string>
+    <string name="Museum">Museum</string>
+    <string name="Park">Park</string>
+    <string name="Restaurant">Restaurant</string>
+    <string name="Wildlife">Wildlife</string>
+
+    <!-- API Base URLs (without parameters)   -->
+    <string name="API_base_url_currency_converter">https://api.currencyapi.com/v3/latest?apikey=</string> <!-- Currency converter API -->
+    <string name="API_base_url_weather_data">https://api.weatherapi.com/v1/forecast.json?key={APIKEY}&amp;q={CITYNAME}&amp;days=1&amp;aqi=no&amp;alerts=no</string> <!-- Weather API -->
+    <string name="API_base_url_unsplash">https://api.unsplash.com/photos/random?query={COUNTRYNAME}&amp;client_id=</string> <!-- Currency converter API -->
+
+    <!-- API Keys  -->
+    <string name="API_key_currency_converter">cur_live_VY5ZD48kAk3YtLMZlWVJXksoa8pzkrleVqE12K06</string> <!-- Currency converter API -->
+    <string name="API_key_weather_data">79513584b6c943a697d85044243009</string> <!-- Weather API -->
+    <string name="API_key_unsplash">RnSf-TTmJoq0WqqW7UpE6A0fFX_0weyB-IR9Nl9v_6Q</string>
+
+
+    <!-- A really long text -->
+    <string name="Roti_Canai">
+        Roti canai, also called roti paratha, is a crispy and buttery Indian flatbread with the softest, flakiest layers inside. Delicious with a side of curry, some sugar, or even just on its own!\n\n
+        Roti canai is a very popular flatbread in Malaysia, just like naan.\n\n
+        Originating from southern India, it is sometimes called roti paratha or roti prata (Singaporean version). They are made famous in Malaysia by Mamak (Muslim-Indian) hawkers and street vendors who modified the Indian paratha recipe to suit the local palate.\n\n
+        The great thing about roti canai is how crispy and flaky the outside becomes while the inside remains soft and buttery. It is usually served as a side dish with curry or daal. However, some people like to eat it on its own or with a sprinkle of sugar.\n\n
+    </string>
+
+    <string name="Nasi_Lemak">
+        Fragrant rice cooked in coconut milk and pandan leaves, served with a side of sambal (a spicy paste), eggs and anchovies, these are the components of a Nasi Lemak that make it a deliciously fulfilling meal.\n\n
+        Known as the national dish, it was once a simplified breakfast dish packed in banana leaves and sold for as low as 30 cents! Nowadays, its variations include a side of rendang (beef curry), curry chicken, fried chicken and other meat dishes, while Nasi Lemak has been conceptualised into burgers and even, ice cream.\n\n
+        It is evident that Malaysians love their Nasi Lemak, as stalls are scattered throughout the nation to satisfy cravings and it remains a staple in most local menus.\n\n
+        But, while its origins remain unconfirmed, here are three quick fun facts you may not know about this exceptional rice dish.\n\n
+    </string>
+
+    <string name="Satay">
+        This delicious chicken satay recipe is easy, authentic, and irresistible! Juicy, tender chicken skewers soaked in a flavorful marinade, cooked on the grill, and served with a rich and spicy peanut satay sauce.\n\n
+        There’s really never a bad time to enjoy chicken satay. Whether it’s a quick weeknight meal or a weekend barbecue, you’re in for a treat with this classic Southeast Asian dish.\n\n
+        Satay is a staple street food in many Southeast Asian countries, such as Indonesia, Malaysia, and Thailand. It’s basically marinated meat skewers grilled over an open flame and served with a peanut dipping sauce.\n\n
+        The most common protein used for satay is chicken, but beef, pork, lamb or mutton, and even tofu are also great options. The marinade and spices may vary slightly depending on the region, but the result is always finger-licking good!\n\n
+    </string>
+
+</resources>

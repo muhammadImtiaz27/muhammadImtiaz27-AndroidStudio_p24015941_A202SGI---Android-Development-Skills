@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.assignment">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/malaysia_app_icon"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/malaysia_app_icon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Assignment"
+        tools:targetApi="31">
+        <activity
+            android:name=".Page_TouristSpot_Map_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Image_Recognition_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Input_Location_Map_Route_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Reset_Password_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_reCAPTCHA_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Add_Rating_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_View_All_Ratings_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Change_User_Profile_Picture_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_User_Profile_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Settings_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Admin_Update_Video_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Random_Photos_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_TouristSpot_Details_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Search_TouristSpot_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Admin_Update_Photos_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Admin_Update_Thumbnail_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Admin_Update_Text_Data_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Admin_Get_TouristSpot_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Admin_Add_TouristSpot_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Admin_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_ToDo_Update_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_ToDo_Add_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_ToDo_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Currency_Converter_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Weather_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Translate_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Login_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Page_Register_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Page_Home_Page_Activity"
+            android:exported="false" />
+    </application>
+
+</manifest>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/ENTIRE_BACKGROUND"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Page_Admin_Get_TouristSpot_Activity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                style="@style/CARD_BACKGROUND_CONTRAST_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:strokeColor="@android:color/transparent"
+                app:strokeWidth="0dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Get Tourist Spot"
+                        android:textSize="30sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/name_container"
+                style="@style/EDITTEXT_PRIMARY"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:hintAnimationEnabled="true"
+                app:hintEnabled="true"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_tourist_spot_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:drawablePadding="10dp"
+                    android:paddingStart="15dp"
+                    android:paddingBottom="14dp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_search_tourist_spot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                style="@style/BUTTON_MATERIAL_PRIMARY"
+                app:icon="@drawable/icon_search"
+                app:iconGravity="end"
+                android:text="Search"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_container" />
+
+            <View
+                android:id="@+id/view8"
+                style="@style/HORIZONTAL_LINE"
+                android:layout_width="wrap_content"
+                android:layout_height="2dp"
+                android:layout_marginTop="32dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btn_search_tourist_spot" />
+
+            <com.google.android.material.progressindicator.CircularProgressIndicator
+                android:id="@+id/progress_bar_search"
+                style="@style/PROGRESSBAR_PRIMARY"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="32dp"
+                android:contentDescription="Getting Tourist Spot from database"
+                android:indeterminate="true"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8" />
+
+            <LinearLayout
+                android:id="@+id/ll_search_result_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/view8">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iv_touristSpot_thumbnail"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:srcCompat="@tools:sample/avatars" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Name:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_touristSpot_thumbnail" />
+
+                    <TextView
+                        android:id="@+id/tv_touristSpot_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="TextView"
+                        android:textIsSelectable="true"
+                        style="@style/TEXT_CONTRAST"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Description:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_touristSpot_name" />
+
+                    <TextView
+                        android:id="@+id/tv_touristSpot_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="TextView"
+                        android:textIsSelectable="true"
+                        style="@style/TEXT_CONTRAST"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Address:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_touristSpot_description" />
+
+                    <TextView
+                        android:id="@+id/tv_touristSpot_address"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="TextView"
+                        android:textIsSelectable="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                    <TextView
+                        android:id="@+id/textView39"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Coordinates:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_touristSpot_address" />
+
+                    <TextView
+                        android:id="@+id/tv_touristSpot_coordinates"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="TextView"
+                        android:textIsSelectable="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView39" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="State:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_touristSpot_coordinates" />
+
+                    <TextView
+                        android:id="@+id/tv_touristSpot_state"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="TextView"
+                        android:textIsSelectable="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView27" />
+
+                    <ImageView
+                        android:id="@+id/iv_touristSpot_state"
+                        android:layout_width="40dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="8dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/flag_malaysia"
+                        app:layout_constraintBottom_toBottomOf="@+id/tv_touristSpot_state"
+                        app:layout_constraintStart_toEndOf="@+id/tv_touristSpot_state"
+                        app:layout_constraintTop_toTopOf="@+id/tv_touristSpot_state" />
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Category:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_touristSpot_state" />
+
+                    <TextView
+                        android:id="@+id/tv_touristSpot_category"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="TextView"
+                        android:textIsSelectable="true"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView37" />
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Photos:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_touristSpot_category" />
+
+                    <LinearLayout
+                        android:id="@+id/ll_photos_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:orientation="vertical"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView23">
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/textView53"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Video:"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/ll_photos_container" />
+
+                    <com.google.android.exoplayer2.ui.StyledPlayerView
+                        android:id="@+id/player_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="300dp"
+                        android:layout_marginTop="16dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+                    <View
+                        android:id="@+id/horizontalLine"
+                        style="@style/HORIZONTAL_LINE"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_marginTop="64dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/player_view" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        style="@style/TEXT_CONTRAST"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:text="Perform actions with this Tourist Spot"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/horizontalLine" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_update_text_data"
+                        style="@style/BUTTON_MATERIAL_PRIMARY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Update Text Data"
+                        app:icon="@drawable/icon_update"
+                        app:iconGravity="end"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_update_thumbnail"
+                        style="@style/BUTTON_MATERIAL_PRIMARY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Update Thumbnail"
+                        app:icon="@drawable/icon_photo"
+                        app:iconGravity="end"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_update_text_data"
+                        app:layout_constraintStart_toStartOf="@+id/btn_update_text_data"
+                        app:layout_constraintTop_toBottomOf="@+id/btn_update_text_data" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_update_photos"
+                        style="@style/BUTTON_MATERIAL_PRIMARY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Update Photos"
+                        app:icon="@drawable/icon_multiple_photos"
+                        app:iconGravity="end"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_update_thumbnail"
+                        app:layout_constraintStart_toStartOf="@+id/btn_update_thumbnail"
+                        app:layout_constraintTop_toBottomOf="@+id/btn_update_thumbnail" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_update_video"
+                        style="@style/BUTTON_MATERIAL_PRIMARY"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Update Video"
+                        app:icon="@drawable/icon_video"
+                        app:iconGravity="end"
+                        app:layout_constraintEnd_toEndOf="@+id/btn_update_photos"
+                        app:layout_constraintStart_toStartOf="@+id/btn_update_photos"
+                        app:layout_constraintTop_toBottomOf="@+id/btn_update_photos" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_delete_tourist_spot"
+                        style="@style/BUTTON_MATERIAL_RED"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="32dp"
+                        android:text="Delete Tourist Spot"
+                        app:icon="@drawable/icon_trash"
+                        app:iconGravity="end"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btn_update_video" />
+
+                    <com.google.android.material.progressindicator.CircularProgressIndicator
+                        android:id="@+id/progress_bar_delete"
+                        style="@style/PROGRESSBAR_PRIMARY"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="16dp"
+                        android:contentDescription="Deleting Tourist Spot"
+                        android:indeterminate="true"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="@+id/btn_delete_tourist_spot"
+                        app:layout_constraintStart_toEndOf="@+id/btn_delete_tourist_spot"
+                        app:layout_constraintTop_toTopOf="@+id/btn_delete_tourist_spot" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

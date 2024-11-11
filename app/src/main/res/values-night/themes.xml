@@ -1,0 +1,343 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Assignment" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+        <item name="android:statusBarColor">@color/darkMode_secondary_color</item>
+    </style>
+
+    <style name="Theme.Assignment" parent="Base.Theme.Assignment">
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.App.BottomSheetDialog</item>
+
+        <!-- Other theme attributes -->
+        <item name="snackbarStyle">@style/Widget.App.Snackbar</item>
+        <item name="snackbarButtonStyle">@style/Widget.App.SnackbarButton</item>
+        <item name="colorOnSurfaceInverse">@color/darkMode_secondary_color</item> <!-- Text color -->
+        <item name="colorPrimaryInverse">@color/darkMode_secondary_color</item> <!-- Action text color -->
+
+    </style>
+
+    <style name="ThemeOverlay.App.BottomSheetDialog" parent="ThemeOverlay.Material3.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalBottomSheetDialog</item>
+    </style>
+
+    <style name="ModalBottomSheetDialog" parent="Widget.Material3.BottomSheet.Modal">
+        <item name="backgroundTint">@color/darkMode_secondary_color</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.LargeComponent</item>
+    </style>
+
+    <style name="ShapeAppearance.App.LargeComponent" parent="ShapeAppearance.Material3.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <!-- Snackbar -->
+    <style name="Widget.App.Snackbar" parent="Widget.Material3.Snackbar">
+        <item name="backgroundTint">@color/darkMode_red_color</item>
+        <item name="android:textColor">@color/darkMode_tertiary_color</item>
+    </style>
+
+    <style name="Widget.App.SnackbarButton" parent="Widget.Material3.Button.TextButton.Snackbar">
+        <item name="android:textColor">@color/darkMode_quaternary_color</item> <!-- Color for action button -->
+    </style>
+
+    <!--  Dark Mode  -->
+
+    <!-- Background Colors  -->
+    <style name="ENTIRE_BACKGROUND">
+        <item name="android:background">@color/darkMode_secondary_color</item>
+    </style>
+
+    <style name="BACKGROUND_PRIMARY">
+        <item name="android:background">@color/darkMode_primary_color</item>
+        <item name="android:textColor">@color/darkMode_tertiary_color</item>
+    </style>
+
+
+    <!-- Use this color for background when its child's text color is set to tertiary -->
+    <style name="BACKGROUND_SECONDARY">
+        <item name="android:background">@color/darkMode_secondary_color</item>
+        <item name="android:textColor">@color/darkMode_tertiary_color</item>
+    </style>
+
+    <style name="BACKGROUND_TERTIARY">
+        <item name="android:background">@color/darkMode_tertiary_color</item>
+    </style>
+
+
+    <!--  Card Background   -->
+    <style name="CARD_BACKGROUND_PRIMARY">
+        <item name="android:backgroundTint">@color/darkMode_primary_color</item>
+    </style>
+
+    <style name="CARD_BACKGROUND_SECONDARY_20">
+        <item name="android:backgroundTint">@color/darkMode_secondary_20_color</item>
+    </style>
+
+    <style name="CARD_BACKGROUND_TERTIARY">
+        <item name="android:backgroundTint">@color/darkMode_tertiary_color</item>
+    </style>
+
+    <style name="CARD_BACKGROUND_CONTRAST">
+        <item name="android:backgroundTint">@color/darkMode_secondary_color</item>
+    </style>
+
+    <style name="CARD_BACKGROUND_CONTRAST_2">
+        <item name="android:backgroundTint">@color/darkMode_tertiary_color</item>
+    </style>
+
+    <style name="CARD_BACKGROUND_CONTRAST_3">
+        <item name="android:backgroundTint">@color/darkMode_primary_20_opacity_color</item>
+    </style>
+
+    <style name="CARD_BACKGROUND_CONTRAST_4">
+        <item name="android:backgroundTint">#5A85AF</item>
+    </style>
+
+    <style name="CARD_BACKGROUND_PURPLE">
+        <item name="android:backgroundTint">@color/darkMode_quinary_color</item>
+    </style>
+
+    <style name="CARD_BACKGROUND_PURPLE_20">
+        <item name="android:backgroundTint">@color/darkMode_quaternary_20_opacity_color</item>
+    </style>
+
+    <style name="CARD_BACKGROUND_RED">
+        <item name="android:backgroundTint">@color/darkMode_red_20_opacity_color</item>
+    </style>
+
+    <!--  Text Colors  -->
+    <style name="INHERIT_BACKGROUND_PRIMARY" parent="BACKGROUND_PRIMARY">
+    </style>
+
+    <style name="INHERIT_BACKGROUND_SECONDARY" parent="BACKGROUND_SECONDARY">
+    </style>
+
+
+    <style name="TEXT_CONTRAST">
+        <item name="android:textColor">@color/darkMode_tertiary_color</item>
+        <item name="android:drawableTint">@color/darkMode_tertiary_color</item>
+    </style>
+
+    <style name="TEXT_CONTRAST_2">
+        <item name="android:textColor">@color/darkMode_secondary_color</item>
+    </style>
+
+    <style name="TEXT_CONTRAST_3">
+        <item name="android:textColor">@color/darkMode_primary_50_opacity_color</item>
+    </style>
+
+    <style name="TEXT_PRIMARY">
+        <item name="android:textColor">@color/darkMode_primary_color</item>
+    </style>
+
+    <style name="TEXT_SECONDARY">
+        <item name="android:textColor">@color/darkMode_secondary_color</item>
+    </style>
+
+    <style name="TEXT_ERROR">
+        <item name="android:textColor">@color/darkMode_red_color</item>
+    </style>
+
+    <!-- TextView Colors in different states (idle, focused)  -->
+    <style name="TEXT_LINK_PRIMARY">
+        <item name="android:textColor">@drawable/darkmode_primary_text_link_colors</item>
+    </style>
+
+    <style name="TEXT_WITH_BACKGROUND">
+        <item name="android:textColor">@color/darkMode_tertiary_color</item>
+        <item name="android:background">@color/darkMode_secondary_50_color</item>
+    </style>
+
+    <!-- EditText Colors   -->
+    <style name="EDITTEXT_PRIMARY">
+        <item name="boxBackgroundColor">@color/darkMode_primary_20_opacity_color</item>
+        <item name="boxStrokeColor">@color/darkMode_primary_color</item>
+        <item name="android:textColorHint">@color/darkMode_primary_50_opacity_color</item>
+        <item name="hintTextColor">@color/darkMode_primary_50_opacity_color</item>
+    </style>
+
+    <!--  Password EditText Colors  -->
+    <style name="EDITTEXT_PASSWORD_PRIMARY">
+        <item name="boxBackgroundColor">@color/darkMode_primary_20_opacity_color</item>
+        <item name="boxStrokeColor">@color/darkMode_primary_color</item>
+        <item name="android:textColorHint">@color/darkMode_primary_50_opacity_color</item>
+        <item name="hintTextColor">@color/darkMode_primary_50_opacity_color</item>
+        <item name="passwordToggleTint">@color/darkMode_primary_color</item>
+    </style>
+
+    <style name="EDITTEXT_DRAWABLE_SECONDARY">
+        <item name="android:drawableTint">@color/darkMode_primary_50_opacity_color</item>
+    </style>
+
+
+    <!-- Vector Assets in EditText  -->
+    <style name="EDITTEXT_ICON">
+        <item name="android:drawableTint">@color/darkMode_primary_50_opacity_color</item>
+    </style>
+
+    <style name="EMAIL_ICON">
+        <item name="android:drawableStart">@drawable/darkmode_icon_email</item>
+    </style>
+
+    <style name="LOCK_ICON">
+        <item name="android:drawableStart">@drawable/darkmode_icon_lock</item>
+    </style>
+
+    <style name="CASH_ICON">
+        <item name="android:drawableStart">@drawable/darkmode_icon_cash</item>
+    </style>
+
+    <style name="CITY_ICON">
+        <item name="android:drawableStart">@drawable/darkmode_icon_city</item>
+    </style>
+
+    <style name="CALENDAR_ICON">
+        <item name="android:drawableStart">@drawable/darkmode_icon_calendar</item>
+    </style>
+
+    <style name="TIME_ICON">
+        <item name="android:drawableStart">@drawable/darkmode_icon_time</item>
+    </style>
+
+    <!--  Button Colors  -->
+    <style name="BUTTON_PRIMARY">
+        <item name="android:backgroundTint">@color/darkMode_primary_color</item>
+        <item name="android:textColor">@color/darkMode_secondary_color</item>
+    </style>
+
+    <style name="BUTTON_PURPLE">
+        <item name="android:backgroundTint">@color/darkMode_quinary_color</item>
+        <item name="android:textColor">@color/darkMode_tertiary_color</item>
+    </style>
+
+    <style name="BUTTON_MATERIAL_PRIMARY">
+        <item name="android:backgroundTint">@color/darkMode_primary_color</item>
+        <item name="android:textColor">@color/darkMode_secondary_color</item>
+        <item name="iconTint">@color/darkMode_secondary_color</item>
+    </style>
+
+    <style name="BUTTON_MATERIAL_PURPLE">
+        <item name="android:backgroundTint">@color/darkMode_quinary_color</item>
+        <item name="android:textColor">@color/darkMode_tertiary_color</item>
+        <item name="iconTint">@color/darkMode_tertiary_color</item>
+    </style>
+
+    <style name="BUTTON_MATERIAL_RED">
+        <item name="android:backgroundTint">@color/darkMode_red_color</item>
+        <item name="android:textColor">@color/darkMode_tertiary_color</item>
+        <item name="iconTint">@color/darkMode_tertiary_color</item>
+    </style>
+
+    <!-- Floating Action Button  -->
+    <style name="FAB_PRIMARY">
+        <item name="backgroundTint">@color/darkMode_primary_color</item>
+        <item name="tint">@color/darkMode_secondary_color</item>
+    </style>
+
+
+    <!--  ImageView  -->
+    <style name="IMAGEVIEW_CURRENCY_CONVERTER_ICON_SOURCE">
+        <item name="android:src">@drawable/darkmode_image_currency_converter</item>
+    </style>
+
+    <style name="IMAGEVIEW_ICON_TINT">
+        <item name="tint">@color/darkMode_primary_color</item>
+    </style>
+
+
+    <!-- ShapeableImageView -->
+    <style name="SHAPEABLEIMAGEVIEW">
+        <item name="strokeColor">@color/darkMode_primary_color</item>
+    </style>
+
+
+    <!--  Spinner (Dropdown)  -->
+    <style name="SPINNER_PRIMARY">
+        <item name="android:background">@color/darkMode_primary_color</item>
+        <item name="android:textColor">@color/darkMode_secondary_color</item>
+        <item name="spinner_divider_color">@color/darkMode_secondary_color</item>
+        <item name="spinner_popup_background">@color/darkMode_primary_color</item>
+        <item name="spinner_arrow_tint">@color/darkMode_secondary_color</item>
+    </style>
+
+
+    <!--  Progressbar  -->
+    <style name="PROGRESSBAR_PRIMARY">
+        <item name="indicatorColor">@color/darkMode_primary_color</item>
+        <item name="trackColor">@color/darkMode_primary_50_opacity_color</item>
+    </style>
+
+    <style name="PROGRESSBAR_TERTIARY">
+        <item name="android:indeterminateTint">@color/darkMode_tertiary_color</item>
+    </style>
+
+    <style name="PROGRESSBAR_TERTIARY_2">
+        <item name="indicatorColor">@color/darkMode_tertiary_color</item>
+        <item name="trackColor">@android:color/transparent</item>
+    </style>
+
+
+    <!-- Horizontal Line  -->
+    <style name="HORIZONTAL_LINE">
+        <item name="android:background">@color/darkMode_primary_20_opacity_color</item>
+    </style>
+
+
+    <!-- Toolbar  -->
+    <style name="TOOLBAR">
+        <item name="android:background">@color/darkMode_primary_color</item>
+        <item name="titleTextColor">@color/darkMode_secondary_color</item>
+        <item name="navigationIcon">@drawable/darkmode_icon_hamburger</item>
+    </style>
+
+    <!-- Tab Layout -->
+    <style name="TAB_LAYOUT_PRIMARY">
+        <item name="tabIndicatorColor">@color/darkMode_secondary_color</item>
+        <item name="tabTextColor">@color/darkMode_secondary_color</item>
+        <item name="tabIconTint">@color/darkMode_secondary_color</item>
+        <item name="android:background">@color/darkMode_primary_color</item>
+    </style>
+
+
+    <!--  Chip  -->
+    <style name="CHIP_PRIMARY">
+        <item name="chipBackgroundColor">@color/darkMode_primary_color</item>
+        <item name="checkedIconTint">@color/darkMode_secondary_color</item>
+        <item name="android:textColor">@color/lightMode_secondary_color</item>
+        <item name="chipIcon">@drawable/darkmode_icon_check</item>
+    </style>
+
+
+    <!-- Switch -->
+    <style name="SWITCH">
+        <item name="thumbTint">@color/darkMode_primary_color</item>
+        <item name="trackTint">@color/darkMode_secondary_color</item>
+        <item name="trackDecorationTint">@color/darkMode_secondary_color</item>
+    </style>
+
+
+    <!-- Rounded Imageview (Nothing to do with colors) -->
+    <style name="roundedImage">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+
+    <!-- Rating Bar -->
+    <style name="RATINGBAR">
+        <item name="android:progressTint">@color/darkMode_primary_color</item>
+    </style>
+
+    <style name="RATINGBAR_SMALL" parent="android:style/Widget.Material.RatingBar.Small">
+        <item name="android:progressTint">@color/darkMode_primary_color</item>
+    </style>
+
+
+    <!-- Horizontal Bar (Linear Progress Indicator -->
+    <style name="HORIZONTALBAR">
+        <item name="trackColor">#5A85AF</item>
+        <item name="indicatorColor">@color/darkMode_primary_color</item>
+    </style>
+
+</resources>

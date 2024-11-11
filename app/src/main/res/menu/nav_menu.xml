@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_categories"
+        android:icon="@drawable/baseline_category_24"
+        android:title="Categories" />
+
+    <item
+        android:id="@+id/nav_challenges"
+        android:icon="@drawable/baseline_quiz_24"
+        android:title="Challenges" />
+
+    <item
+        android:id="@+id/nav_todo"
+        android:icon="@drawable/baseline_task_24"
+        android:title="To-Do List" />
+
+    <item
+        android:id="@+id/nav_translate"
+        android:icon="@drawable/baseline_g_translate_24"
+        android:title="Translate" />
+
+    <item
+        android:id="@+id/nav_weather"
+        android:icon="@drawable/baseline_sunny_24"
+        android:title="Weather" />
+
+    <item
+        android:id="@+id/nav_likes"
+        android:icon="@drawable/baseline_thumb_up_24"
+        android:title="Likes" />
+
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@drawable/baseline_settings_24"
+        android:title="Settings" />
+
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/baseline_logout_24"
+        android:title="Logout" />
+
+</menu>

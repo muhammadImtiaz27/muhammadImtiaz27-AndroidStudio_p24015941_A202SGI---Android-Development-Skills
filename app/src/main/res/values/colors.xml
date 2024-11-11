@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Colors for light mode   -->
+    <color name="lightMode_primary_color">#0A4580</color>
+    <color name="lightMode_secondary_color">#031526</color>
+    <color name="lightMode_tertiary_color">#DDEFFD</color>
+    <color name="lightMode_quaternary_color">#8C59F3</color>
+    <color name="lightMode_quinary_color">#7D0FCC</color>
+    <color name="lightMode_red_color">#D32F2F</color>
+
+    <!--  Colors for dark mode  -->
+    <color name="darkMode_primary_color">#7FBAF5</color>
+    <color name="darkMode_secondary_color">#021422</color>
+    <color name="darkMode_tertiary_color">#D9EBFC</color>
+    <color name="darkMode_quaternary_color">#A133F0</color>
+    <color name="darkMode_quinary_color">#3F0CA7</color>
+    <color name="darkMode_red_color">#EF5350</color>
+
+
+    <!-- Light mode with opacity -->
+    <color name="lightMode_primary_20_opacity_color">#337FBAF5</color>
+    <color name="lightMode_primary_50_opacity_color">#80031526</color>
+
+    <color name="lightMode_secondary_20_color">#33031526</color>
+    <color name="lightMode_secondary_50_color">#80031526</color>
+
+    <color name="lightMode_quinary_20_opacity_color">#337D0FCC</color>
+    <color name="lightMode_quinary_50_opacity_color">#807D0FCC</color>
+
+    <color name="lightMode_quaternary_20_opacity_color">#338C59F3</color>
+    <color name="lightMode_quaternary_50_opacity_color">#808C59F3</color>
+
+    <color name="lightMode_red_20_opacity_color">#33D32F2F</color>
+    <color name="lightMode_red_50_opacity_color">#80D32F2F</color>
+
+    <!-- Dark mode with opacity -->
+    <color name="darkMode_primary_20_opacity_color">#337FBAF5</color>
+    <color name="darkMode_primary_50_opacity_color">#807FBAF5</color>
+
+    <color name="darkMode_secondary_20_color">#33021422</color>
+    <color name="darkMode_secondary_50_color">#80021422</color>
+
+    <color name="darkMode_quinary_20_opacity_color">#333F0CA7</color>
+    <color name="darkMode_quinary_50_opacity_color">#803F0CA7</color>
+
+    <color name="darkMode_quaternary_20_opacity_color">#33A133F0</color>
+    <color name="darkMode_quaternary_50_opacity_color">#80A133F0</color>
+
+    <color name="darkMode_red_20_opacity_color">#33EF5350</color>
+    <color name="darkMode_red_50_opacity_color">#80EF5350</color>
+
+    </resources>
